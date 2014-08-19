@@ -27,7 +27,7 @@ with open("README/README.rst",'r') as file :
 MODULE_NAME="pyhobdcalc"
 
 setup(name=MODULE_NAME,version='1.0.0',
-      url='https://github.com/mrcyberfighter/curser',
+      url='https://github.com/mrcyberfighter/pyhobdcalc',
       author="Eddie Bruggemann",author_email="mrcyberfighter@gmail.com",
       maintainer="Eddie Bruggemann",maintainer_email="mrcyberfighter@gmail.com",
       long_description=long_description,
