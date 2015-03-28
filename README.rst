@@ -1,44 +1,43 @@
-
 =======================
 pyhobdcalc description.
 =======================
 
--------------------------------------------------------------------
-**pyhobdcalc for Python Hexdecimal Octal Binar Decimal Calculator**
--------------------------------------------------------------------
+---------------------------------------------------------------------
+**pyhobdcalc for Python Hexadecimal Octal Binary Decimal Calculation**
+---------------------------------------------------------------------
 
 :::::::::::::::::::::::
-The module description:
+Module description    :
 :::::::::::::::::::::::
 
 
                                                                                                                                      
-  pyhobdcalc is an python module written in C which implement conversion and calculating functions in bases 2, 8, 10, 16.          
+  pyhobdcalc is a python module written in C which implement conversion and calculating functions in bases 2, 8, 10, 16.          
                                                                                                                                    
-            Which python desn't implement like signed binar, octal, hexadecimal conversion in integers.                            
+            Which python doesn't implement like signed binary, octal, hexadecimal conversion in integers.                            
                                                                                                                                    
             Or signed float conversion from decimal to base 2, 8, 16 or from base 2, 8, 16 in decimal base.                        
                                                                                                                                    
-            And permit to add, substract, multiply and divide base 2, 8, 16 integers and floats strings.                           
+            And performs addition, subtraction, multiplication and division on integers and float strings using bases 2, 8, and 16 .                           
                                                                                                                                    
 
     
   
-:::::::::::::::::::::
-The module implement:
-:::::::::::::::::::::
+::::::::::::::::::::::
+Module implementation:
+::::::::::::::::::::::
 
 ++++++++++++++++++++++++++
 Base conversion functions:
 ++++++++++++++++++++++++++
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Different bases integer strings conversion to integer:
+Different bases integer string conversion to integer :
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
     
     1. **bintoint**:
     
-        Convert an binar string given with optional the binar identifier "0b". The function can threads signed values in the C type *long long int* value range:
+        Convert a binary string given with optional the binary identifier "0b". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -58,7 +57,7 @@ Different bases integer strings conversion to integer:
         
     3. **hextoint**:
     
-        Convert an hexadecimal string given with optional the hexdecimal identifier "0x". The function can thread signed values in the C type *long long int* value range:               
+        Convert a hexadecimal string given with optional the hexadecimal identifier "0x". The function can thread signed values in the C type *long long int* value range:               
         
             * Maximal value:  9223372036854775807.
             
@@ -67,52 +66,52 @@ Different bases integer strings conversion to integer:
         And return the converted value as an integer string.
         
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
-Different bases floats strings conversion to floats: 
+Different bases float string conversion to float   : 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     1. **binfloattofloat**:
     
-        Convert an binar string with optional binar identifier "0b" representing an floating-point value into an float with maximal precision from 15 digits.
+        Convert a binary string with optional binary identifier "0b" representing a floating-point value into a float with maximal precision from 15 digits.
         
-        And return the converted value as an float string.
+        And return the converted value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
             
     2. **octfloattofloat**:
     
-        Convert an octal string with optional octal identifier "0" representing an floating-point value into an float with maximal precision from 15 digits.
+        Convert an octal string with optional octal identifier "0" representing a floating-point value into a float with maximal precision from 15 digits.
         
-        And return the converted value as an float string.
+        And return the converted value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
             
     3. **hexfloattofloat**:
     
-        Convert an hexadecimal string with optional hexdecimal identifier "0x" representing an floating-point value into an float with maximal precision from 15 digits.
+        Convert a hexadecimal string with optional hexadecimal identifier "0x" representing a floating-point value into a float with maximal precision from 15 digits.
         
-        And return the converted value as an float string.
+        And return the converted value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Float to different bases floats:
+Float to different base float  :
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                     
 
     1. **floattobinfloat**:
     
-        Convert an float given as an string into an floating-point binar string with maximal value from 16 binar digits. The given float integer part can be maximal 8 bytes great.
+        Convert a float given as a string into a floating-point binary string with a maximum length of 16 binary digits. The given float integer part has a maximum length of 8 bytes.
         
-        And return the floating-point binar string corresponding to the given float with the given limitations.
+        And return the floating-point binary string corresponding to the given float with the given limitations.
         
     2. **floattooctfloat**:
     
-        Convert an float given as an string into an floating-point octal string with maximal value from 16 octal digits. The given float integer part can be maximal 8 bytes great.
+        Convert a float given as a string into a floating-point octal string with a maximum length of 16 octal digits. The given float integer part has a maximum length of 8 bytes.
         
         And return the floating-point octal string corresponding to the given float with the given limitations.
         
     3. **floattohexfloat**:
     
-        Convert an float given as an string into an floating-point hexadecimal string with maximal value from 16 hexadecimal digits. The given float integer part can be maximal 8 bytes great.
+        Convert a float given as a string into a floating-point hexadecimal string with a maximum length of 16 hexadecimal digits. The given float integer part has a maximum length of 8 bytes.
         
         And return the floating-point hexadecimal string corresponding to the given float with the given limitations.
                    
@@ -122,12 +121,12 @@ Base 2, 8, 16 integers calculating functions:
 +++++++++++++++++++++++++++++++++++++++++++++
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Binar integer calculating functions:
+Binary integer calculating functions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   1. **binaddbin**:
         
-        Add 2 binar strings given with optional the binar identifier "0b". The function can threads signed values in the C type *long long int* value range:
+        Add 2 binary strings given with optional the binary identifier "0b". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -139,19 +138,19 @@ Binar integer calculating functions:
             
   2. **binsubbin**:
         
-        Substract 2 binar strings given with optional the binar identifier "0b". The function can threads signed values in the C type *long long int* value range:
+        Subtract 2 binary strings given with optional the binary identifier "0b". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
             * Minimal value: -9223372036854775808.
             
-        And return the substraction result as an integer string.    
+        And return the subtraction result as an integer string.    
             
-            :note: The substraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
+            :note: The subtraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
             
   3. **binmultbin**:
         
-        Multiply 2 binar strings given with optional the binar identifier "0b". The function can threads signed values in the C type *long long int* value range:
+        Multiply 2 binary strings given with optional the binary identifier "0b". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -163,7 +162,7 @@ Binar integer calculating functions:
             
   4. **bindivbin**:
         
-        Divide 2 binar strings given with optional the binar identifier "0b". The function can threads signed values in the C type *long long int* value range:
+        Divide 2 binary strings given with optional the binary identifier "0b". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -171,7 +170,7 @@ Binar integer calculating functions:
             
         And return the division result as an integer string.    
             
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Octal integer calculating functions:
@@ -179,7 +178,7 @@ Octal integer calculating functions:
 
   1. **octaddoct**:
         
-        Add 2 octal strings given with optional the octal identifier "0". The function can threads signed values in the C type *long long int* value range:
+        Add 2 octal strings given with optional the octal identifier "0". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -191,19 +190,19 @@ Octal integer calculating functions:
             
   2. **octsuboct**:
         
-        Substract 2 octal strings given with optional the octal identifier "0". The function can threads signed values in the C type *long long int* value range:
+        Subtract 2 octal strings given with optional the octal identifier "0". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
             * Minimal value: -9223372036854775808.
             
-        And return the substraction result as an integer string.    
+        And return the subtraction result as an integer string.    
             
-            :note: The substraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
+            :note: The subtraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
             
   3. **octmultoct**:
         
-        Multiply 2 octal strings given with optional the octal identifier "0". The function can threads signed values in the C type *long long int* value range:
+        Multiply 2 octal strings given with optional the octal identifier "0". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -215,7 +214,7 @@ Octal integer calculating functions:
             
   4. **octdivoct**:
         
-        Divide 2 octal strings given with optional the octal identifier "0". The function can threads signed values in the C type *long long int* value range:
+        Divide 2 octal strings given with optional the octal identifier "0". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -223,7 +222,7 @@ Octal integer calculating functions:
             
         And return the division result as an integer string.    
             
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
             
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Hexadecimal integer calculating functions:
@@ -231,7 +230,7 @@ Hexadecimal integer calculating functions:
 
   1. **hexaddhex**:
         
-        Add 2 hexdecimal strings given with optional the hexdecimal identifier "0x". The function can threads signed values in the C type *long long int* value range:
+        Add 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -243,19 +242,19 @@ Hexadecimal integer calculating functions:
             
   2. **hexsubhex**:
         
-        Substract 2 hexdecimal strings given with optional the hexdecimal identifier "0x". The function can threads signed values in the C type *long long int* value range:
+        Subtract 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
             * Minimal value: -9223372036854775808.
             
-        And return the substraction result as an integer string.    
+        And return the subtraction result as an integer string.    
             
-            :note: The substraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
+            :note: The subtraction result cannot overflow the same maximal and minimal range as for the given arguments values. 
             
   3. **hexmulthex**:
         
-        Multiply 2 hexdecimal strings given with optional the hexdecimal identifier "0x". The function can threads signed values in the C type *long long int* value range:
+        Multiply 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -267,7 +266,7 @@ Hexadecimal integer calculating functions:
             
   4. **hexdivhex**:
         
-        Divide 2 hexdecimal strings given with optional the hexdecimal identifier "0x". The function can threads signed values in the C type *long long int* value range:
+        Divide 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts signed values in the C type *long long int* value range:
         
             * Maximal value:  9223372036854775807.
             
@@ -275,7 +274,7 @@ Hexadecimal integer calculating functions:
             
         And return the division result as an integer string.    
             
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.
                                    
             
 ++++++++++++++++++++++++++++++++++++++++++
@@ -283,64 +282,64 @@ Base 2, 8, 16 float calculating functions:
 ++++++++++++++++++++++++++++++++++++++++++                               
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Binar float calculating functions:
+Binary float calculating functions:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     1. **binfloataddbinfloat**:
     
-        Add 2 binar strings given with optional the binar identifier "0b". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Add 2 binary strings given with optional the binary identifier "0b". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
             * Minimal integer part value: -9223372036854775808.
             
-        The entire binar string can contains 128 binary digits (without identifier, sign and comma.).
+        The entire binary string can contains 128 binary digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     2. **binfloatsubbinfloat**:
     
-        Substract 2 binar strings given with optional the binar identifier "0b". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Subtract 2 binary strings given with optional the binary identifier "0b". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
             * Minimal integer part value: -9223372036854775808.
             
-        The entire binar string can contains 128 binary digits (without identifier, sign and comma.).
+        The entire binary string can contains 128 binary digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                   
     3. **binfloatmultbinfloat**:
     
-        Multiply 2 binar strings given with optional the binar identifier "0b". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Multiply 2 binary strings given with optional the binary identifier "0b". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
             * Minimal integer part value: -9223372036854775808.
             
-        The entire binar string can contains 128 binary digits (without identifier, sign and comma.).
+        The entire binary string can contains 128 binary digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     4. **binfloatdivbinfloat**:
     
-        Divide 2 binar strings given with optional the binar identifier "0b". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Divide 2 binary strings given with optional the binary identifier "0b". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
             * Minimal integer part value: -9223372036854775808.
             
-        The entire binar string can contains 128 binary digits (without identifier, sign and comma.).
+        The entire binary string can contains 128 binary digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                                 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Octal float calculating functions:
@@ -348,7 +347,7 @@ Octal float calculating functions:
 
     1. **octfloataddoctfloat**:
     
-        Add 2 octal strings given with optional the octal identifier "0". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Add 2 octal strings given with optional the octal identifier "0". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -356,13 +355,13 @@ Octal float calculating functions:
             
         The entire octal string can contains 48 octal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     2. **octfloatsuboctfloat**:
     
-        Substract 2 octal strings given with optional the octal identifier "0". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Subtract 2 octal strings given with optional the octal identifier "0". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -370,13 +369,13 @@ Octal float calculating functions:
             
         The entire octal string can contains 48 octal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                   
     3. **octfloatmultoctfloat**:
     
-        Multiply 2 octal strings given with optional the octal identifier "0". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Multiply 2 octal strings given with optional the octal identifier "0". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -384,13 +383,13 @@ Octal float calculating functions:
             
         The entire octal string can contains 48 octal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     4. **octfloatdivoctfloat**:
     
-        Divide 2 octal strings given with optional the octal identifier "0". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Divide 2 octal strings given with optional the octal identifier "0". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -398,9 +397,9 @@ Octal float calculating functions:
             
         The entire octal string can contains 48 octal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                                 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Hexadecimal float calculating functions:
@@ -408,7 +407,7 @@ Hexadecimal float calculating functions:
 
     1. **hexfloataddhexfloat**:
     
-        Add 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Add 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -416,13 +415,13 @@ Hexadecimal float calculating functions:
             
         The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     2. **hexfloatsubhexfloat**:
     
-        Substract 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Subtract 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -430,13 +429,13 @@ Hexadecimal float calculating functions:
             
         The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                   
     3. **hexfloatmulthexfloat**:
     
-        Multiply 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Multiply 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -444,13 +443,13 @@ Hexadecimal float calculating functions:
             
         The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
             
     4. **hexfloatdivhexfloat**:
     
-        Divide 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function can threads 8 bytes values for the integer part from the float, in the C type *long long int* value range:
+        Divide 2 hexadecimal strings given with optional the hexadecimal identifier "0x". The function accepts 8 bytes values for the integer part from the float, in the C type *long long int* value range:
         
             * Maximal integer part value:  9223372036854775807.
             
@@ -458,10 +457,12 @@ Hexadecimal float calculating functions:
             
         The entire hexadecimal string can contains 16 hexadecimal digits (without identifier, sign and comma.).
         
-        And return the result value as an float string.
+        And return the result value as a float string.
         
-            :note: The returned value is limited to the C type *double* (15 digits precision) but the module compute internally with the C type *long double* (19 digits precision) for getting an exact value.                                                          
+            :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                                                                
-                                           
+Thank's to gtackett 
+
+for the improved English style, grammar, and spelling correction from this file.                                           
               
-                             
+ 
