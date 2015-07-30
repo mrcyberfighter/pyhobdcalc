@@ -2,6 +2,22 @@
 pyhobdcalc description.
 =======================
 
+  :pyhobdcalc: A python module for Python Hexadecimal Octal Binary Decimal Calculation.
+  
+  :Writing by: Eddie Brüggemann
+  
+  :Language: python 2.7.3
+
+  :Contact: mrcyberfighter@gmail.com
+  
+  :Credits: Thank's to my beloved mother, my family and to the doctors.
+
+  :Thank's: 
+  
+    Thank's to gtackett 
+  
+    for the improved English style, grammar, and spelling correction from this file.   
+
 ---------------------------------------------------------------------
 **pyhobdcalc for Python Hexadecimal Octal Binary Decimal Calculation**
 ---------------------------------------------------------------------
@@ -20,38 +36,11 @@ Module description    :
                                                                                                                                    
             And performs addition, subtraction, multiplication and division on integers and float strings using bases 2, 8, and 16 .  
             
-------------
-Installation
-------------
 
-    `pyhobdcalc <https://pypi.python.org/pypi/pyhobdcalc/1.0.0>`_ is hosted on the `PyPI (Python Package Index) <https://pypi.python.org/pypi>`_ .
-    
-    And you can install **pyhobdcalc** with the pip program:
-    
-    ..
-    
-      $ sudo pip install pyhobdcalc
-      
-    Or with the python-pip module:
-    
-    ..
-    
-      $ sudo python -m pip install pyhobdcalc
-      
----------      
-Copyright
----------
-
-+--------------------------------------------------------------------------+
-| This programm is under copyright from the GPL GNU GENERAL PUBLIC LICENSE |
-+--------------------------------------------------------------------------+      
     
     
 
-                                                                                                                                   
-
-    
-  
+                        
 ::::::::::::::::::::::
 Module implementation:
 ::::::::::::::::::::::
@@ -490,8 +479,28 @@ Hexadecimal float calculating functions:
         
             :note: The returned value is limited to the C type *double* (15 digits precision) but internally the module uses the C type *long double* (19 digits precision) for getting an exact value.                                                          
                                                                
-Thank's to gtackett 
+------------
+Installation
+------------
 
-for the improved English style, grammar, and spelling correction from this file.                                           
-              
- 
+    `pyhobdcalc <https://pypi.python.org/pypi/pyhobdcalc/1.0.0>`_ is hosted on the `PyPI (Python Package Index) <https://pypi.python.org/pypi>`_ .
+    
+    And you can install **pyhobdcalc** with the pip program:
+    
+    ..
+    
+      $ sudo pip install pyhobdcalc
+      
+    Or with the python-pip module:
+    
+    ..
+    
+      $ sudo python -m pip install pyhobdcalc
+      
+---------      
+Copyright
+---------
+
++--------------------------------------------------------------------------+
+| This programm is under copyright from the GPL GNU GENERAL PUBLIC LICENSE |
++--------------------------------------------------------------------------+      
