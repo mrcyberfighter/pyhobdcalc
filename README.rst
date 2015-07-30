@@ -18,7 +18,36 @@ Module description    :
                                                                                                                                    
             Or signed float conversion from decimal to base 2, 8, 16 or from base 2, 8, 16 in decimal base.                        
                                                                                                                                    
-            And performs addition, subtraction, multiplication and division on integers and float strings using bases 2, 8, and 16 .                           
+            And performs addition, subtraction, multiplication and division on integers and float strings using bases 2, 8, and 16 .  
+            
+------------
+Installation
+------------
+
+    `pyhobdcalc <https://pypi.python.org/pypi/pyhobdcalc/1.0.0>`_ is hosted on the `PyPI (Python Package Index) <https://pypi.python.org/pypi>`_ .
+    
+    And you can install **pyhobdcalc** with the pip program:
+    
+    ..
+    
+      $ sudo pip install pyhobdcalc
+      
+    Or with the python-pip module:
+    
+    ..
+    
+      $ sudo python -m pip install pyhobdcalc
+      
+---------      
+Copyright
+---------
+
++--------------------------------------------------------------------------+
+| This programm is under copyright from the GPL GNU GENERAL PUBLIC LICENSE |
++--------------------------------------------------------------------------+      
+    
+    
+
                                                                                                                                    
 
     
